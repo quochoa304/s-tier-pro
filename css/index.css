@@ -1,0 +1,140 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f7fa; /* Use the first file's background for consistency */
+}
+
+/* Section Title */
+.section-title {
+    text-align: center;
+    margin-bottom: 40px; 
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: 700; /* Weight adjusted to match first file */
+    color: rgba(0, 0, 0, 0.752); /* Adjusted color */
+    margin: 90px 0 5px 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-title p {
+    font-size: 16px;
+    font-weight: 100;
+    color: #888;
+    margin-bottom: 60px;
+}
+
+/* Flex Container Styles */
+.about-section, .table-container, .card-container {
+    display: flex;
+    justify-content: center; /* Center the content for card and table */
+    padding-bottom: 100px; /* Ensure consistency in padding */
+    background-color: #fff; /* Background color for consistency */
+}
+
+.card-container {
+    padding: 20px; /* Optional padding for card container */
+}
+
+/* Content Styling */
+.content, .table-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
+    width: 24%;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease; /* Fixed the transition syntax */
+    margin: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 990px) {
+    .content, .table-container {
+        flex-direction: column; /* Stack items in smaller screens */
+    }
+
+    .card {
+        margin: 10px;
+        flex: 50%;
+        max-width: 47%;  
+        max-height: 45%;
+    }
+}
+
+@media (max-width: 767px) {
+    .card {
+        margin: 10px;
+        flex: 50%;
+        max-width: 95%;  
+        max-height: 45%;
+    }
+}
+
+/* Additional Styles from File 1 */
+.text-section {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.text-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+    position: relative;
+}
+
+.text-section h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+    margin-top: 10px;
+}
+
+.text-section p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(20, 79, 162);
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1; /* Keeps the text in front of the background */
+    transition: color 0.7s ease; /* Smooth transition for text color */
+}
+
+.btn:hover {
+    color: white; /* Change text color on hover */
+}
+
